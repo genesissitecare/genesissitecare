@@ -1,0 +1,147 @@
+/* ## Site Footer
+--------------------------------------------- */
+
+.site-footer {
+    width: 100%;
+    background-color: $white;
+    font-size: 1.8rem;
+    > .wrap {
+        margin: 0 auto;
+        padding: 5vw;
+        font-size: 1.6rem;
+        position: relative;
+        border-top: $site-border;
+        @include breakpoint(sm) {
+            width: 90%;
+            max-width: map-get($breakpoints, xl);
+            padding: 6rem 0;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .widget-area {
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ## Before Footer
+--------------------------------------------- */
+
+.before-footer {
+    background-color: $light;
+    padding: 10rem 0;
+    border-top: $site-border;
+    border-bottom: $site-border;
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include flexfix;
+    }
+    .widget {
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .icon-widget {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+/* ## Footer Widgets
+--------------------------------------------- */
+
+.footer-widgets {
+    padding: 6rem 0;
+    @include breakpoint(sm) {
+        padding: 10rem 0;
+    }
+    .wrap {
+        @include breakpoint(sm) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .widget-area {
+        margin: 0 auto 4rem;
+		@include breakpoint(sm) {
+			flex: 1;
+			margin-left: 2.564102564102564%;
+			&:first-of-type {
+				margin-left: 0;
+			}
+        }
+        &:first-of-type {
+            @include breakpoint(sm) {
+                padding-right: $margin;
+                flex: 1.382;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        .widget {
+            width: 100%;
+            display: block;
+            margin: 0 auto 1em;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    p {
+        font-size: smaller;
+    }
+    .gfield_label {
+        display: none;
+    }
+    .gform_button {
+        background-color: transparent;
+        box-shadow: inset 0 0 0 2px $accent;
+        color: $accent;
+        &:hover {
+            color: $white;
+            background-color: $accent;
+            box-shadow: inset 0 0 0 2px $accent;
+        }
+    }
+    .gform_description {
+        display: block;
+        font-size: smaller;
+    }
+}
+
+
+/* ## Footer Credits
+--------------------------------------------- */
+
+.footer-credits {
+    font-size: smaller;
+    .wrap {
+        padding: 5rem 0;
+        border-top: 1px solid $border;
+    }
+    .widget {
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+        }
+        &:last-of-type {
+            @include breakpoint(sm) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

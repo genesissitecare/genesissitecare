@@ -1,0 +1,96 @@
+/* ## Pricing
+--------------------------------------------- */
+
+.pricing-page {
+	.entry {
+		padding-left: 0;
+		padding-right: 0;
+		background-color: transparent;
+	}
+}
+
+.pricing {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	.first {
+		text-align: left;
+		@include breakpoint(sm) {
+			padding-right: $margin;
+		}
+		p {
+			font-size: smaller;
+		}
+	}
+}
+
+/* ## Services
+--------------------------------------------- */
+
+.services-page {
+	.entry {
+		padding-left: 0;
+		padding-right: 0;
+		background-color: transparent;
+	}
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	h2 {
+		text-align: center;
+		margin: 0 auto 1.5em;
+		width: 100%;
+	}
+}
+
+.service {
+	text-align: center;
+	margin-bottom: 2.5rem;
+	padding: 1em;
+	background-color: $white;
+	border-radius: $site-radius;
+	i {
+		display: block;
+		margin-bottom: 0.382em;
+		color: $accent;
+		font-size: 2.5em;
+		text-shadow: 0.05em 0.05em 0 rgba($accent,0.15);
+	}
+	h3 {
+		font-size: 1em;
+	}
+	p {
+		font-size: smaller;
+		margin-bottom: 0.5em;
+	}
+}
+
+/* ## FAQs
+--------------------------------------------- */
+
+.faqs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.faq {
+	width: 100%;
+	background-color: $white;
+	margin-bottom: 3rem;
+	@include breakpoint(sm) {
+		width: $one-half;
+	}
+	h3 {
+		padding: 1em;
+		font-size: 2rem;
+		background-color: $border;
+	}
+	p {
+		padding: 0 2rem;
+	}
+}
+
+
