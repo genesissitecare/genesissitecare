@@ -465,3 +465,34 @@ function gsc_conditional_nav_items( $menu, $args ) {
 	return $menu;
 
 }
+
+add_action( 'template_redirect', 'gsc_edd_empty_cart_redirect' );
+/**
+ * Redirect customer at checkout when their cart is empty.
+ *
+ * When the cart in Easy Digital Downloads is empty, it will show the customer a
+ * “Your cart is empty” message and keep them on the checkout page. We can
+ * redirect the customer when they remove the last item in their cart,
+ * or when they visit the checkout page and have no items in their
+ * cart. For example, you might like to redirect the customer
+ * to your shop page, so they can continue shopping.
+ *
+ * @link https://amdrew.com/redirect-customer-at-checkout-when-their-cart-is-empty/
+ *
+ * @return void
+ */
+function gsc_edd_empty_cart_redirect() {
+
+	$cart 		= function_exists( 'edd_get_cart_contents' ) ? edd_get_cart_contents() : false;
+
+	$redirect 	= site_url( 'pricing' ); // could be the URL to your shop
+
+	if ( function_exists( 'edd_is_checkout' ) && edd_is_checkout() && ! $cart ) {
+
+		wp_redirect( $redirect, 301 ); 
+
+		exit;
+
+	}
+
+}

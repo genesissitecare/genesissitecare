@@ -47,7 +47,7 @@ function gsc_before_footer() {
 	
 }
 
-add_action( 'genesis_footer', 'gsc_after_footer', 10 );
+add_action( 'genesis_footer', 'gsc_footer_credits', 10 );
 /**
  * Display Footer Credits widget area.
  *
@@ -55,7 +55,7 @@ add_action( 'genesis_footer', 'gsc_after_footer', 10 );
  *
  * @return void
  */
-function gsc_after_footer() {
+function gsc_footer_credits() {
 
 	genesis_widget_area( 'footer-credits', array(
 		'before' => '<div class="footer-credits widget-area"><div class="wrap">',

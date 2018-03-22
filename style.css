@@ -1096,6 +1096,12 @@ th {
 	background-color: #eceff1;
 }
 
+.pricing-table > div:last-of-type .button {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 2px #00cf86;
+	color: #00cf86;
+}
+
 .pricing-table > div ul {
 	margin: 0;
 }
@@ -1189,8 +1195,25 @@ th {
 	font-size: smaller;
 }
 
-.pricing-table .button {
-	margin-top: 1em;
+.pricing-table .edd-submit.button {
+	margin: 1em auto;
+	background-color: #00cf86;
+	color: #ffffff;
+}
+
+.pricing-table .edd-submit.button:hover,
+.pricing-table .edd-submit.button:focus {
+	background-color: #00cf86;
+	color: #ffffff;
+}
+
+.pricing-table .edd-discount-loader.edd-loading,
+.pricing-table .edd-loading-ajax.edd-loading,
+.pricing-table a.edd-add-to-cart.white .edd-loading {
+	border-top-color: rgba(255, 255, 255, 0.2);
+	border-right-color: rgba(255, 255, 255, 0.2);
+	border-bottom-color: rgba(255, 255, 255, 0.2);
+	border-left-color: #ffffff;
 }
 
 /* ## Avatars

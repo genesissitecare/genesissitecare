@@ -20,7 +20,7 @@ if ( $plans ) {
 		$title = esc_html( get_post_meta( $id, 'plan_' . $i . '_title', true ) );
 		$price = (int) get_post_meta( $id, 'plan_' . $i . '_price', true );
 		$description = esc_html( get_post_meta( $id, 'plan_' . $i . '_description', true ) );
-		$link = esc_url( get_post_meta( $id, 'plan_' . $i . '_link', true ) );
+		$link = (int) get_post_meta( $id, 'plan_' . $i . '_link', true );
 		
 		$html .= '<div class="plan">';
 		$html .= '<h3>' . $title . '</h3>';
@@ -46,7 +46,7 @@ if ( $plans ) {
 
 		}
 
-		$html .= '<a href="' . $link . '" target="_blank" class="button">Get Started Now</a>';
+		$html .= do_shortcode( '[purchase_link id="' . $link . '" text="Get Started Now" style="button" price="0"]' );
 
 		$html .= '</div>';
 	
