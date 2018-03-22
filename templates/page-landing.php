@@ -52,7 +52,9 @@ remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 remove_action( 'genesis_before_content_sidebar_wrap', 'gsc_page_header' );
 
 // Add title back (removed in /includes/header.php).
-add_action( 'genesis_entry_header', 'genesis_do_post_title', 0 );
+add_action( 'genesis_entry_header', 'genesis_do_post_title', 1 );
+
+add_action( 'genesis_entry_header', 'the_custom_logo', 0 );
 
 // Remove navigation.
 remove_theme_support( 'genesis-menus' );

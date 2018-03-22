@@ -614,7 +614,7 @@ html {
 }
 
 body {
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	color: #546e7a;
 	font-family: 'museo-sans', Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -732,8 +732,8 @@ select,
 textarea {
 	background-color: #ffffff;
 	border: 2px solid #eceff1;
-	border-radius: 9rem;
-	padding: 0.5em 1.5em;
+	border-radius: 4px;
+	padding: 0.5em 1em;
 	width: 100%;
 	line-height: 2;
 }
@@ -860,9 +860,9 @@ button:disabled,
 input[type='button']:disabled,
 input[type='reset']:disabled,
 input[type='submit']:disabled {
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	border-width: 0;
-	color: #697886;
+	color: #67798a;
 	cursor: not-allowed;
 }
 
@@ -938,9 +938,13 @@ tbody {
 td,
 th {
 	text-align: left;
-	padding: 0.618em;
+	padding: 1em;
 	border-top: 2px solid #eceff1;
 	border-right: 2px solid #eceff1;
+}
+
+th {
+	background-color: #f7f8f9;
 }
 
 /* ## Accessibility
@@ -1081,14 +1085,14 @@ th {
 	border-radius: 4px;
 	padding: 2em 1em;
 	width: 100%;
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	border: 0;
 	text-align: center;
 }
 
 .pricing-table > div:first-of-type {
 	background-color: #ffffff;
-	border: 2px solid #f6f7f8;
+	border: 2px solid #f7f8f9;
 	transform: scale(1.05);
 }
 
@@ -1164,7 +1168,7 @@ th {
 	position: absolute;
 	top: -18px;
 	top: -1.8rem;
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	height: 10px;
 	height: 1rem;
 	width: 10px;
@@ -1181,7 +1185,7 @@ th {
 }
 
 .pricing-table .tooltip {
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	display: none;
 	padding: 1em;
 	border-radius: 4px;
@@ -1530,7 +1534,7 @@ img.alignright,
 	font-size: 1.4rem;
 	margin-bottom: 0;
 	line-height: 1;
-	color: #f6f7f8;
+	color: #f7f8f9;
 }
 
 /* ## Header Right
@@ -1854,7 +1858,7 @@ img.alignright,
 }
 
 .widgetized-page .entry {
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -1908,7 +1912,7 @@ img.alignright,
 }
 
 .entry-content code {
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	display: block;
 	padding: 10px 20px;
 	padding: 1rem 2rem;
@@ -2182,7 +2186,7 @@ p.entry-meta {
 /* ## Before Footer
 --------------------------------------------- */
 .before-footer {
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	padding: 100px 0;
 	padding: 10rem 0;
 	border-top: 2px solid #eceff1;
@@ -2448,7 +2452,7 @@ p.entry-meta {
 }
 
 .gf_progressbar {
-	background: #f6f7f8;
+	background: #f7f8f9;
 }
 
 .gf_progressbar_percentage {
@@ -2616,7 +2620,7 @@ p.entry-meta {
 .gs-faq__answer {
 	display: none;
 	padding: 1em;
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 	border-bottom: 2px solid #eceff1;
 }
 
@@ -2734,7 +2738,7 @@ p.entry-meta {
 /* ## Pricing
 --------------------------------------------- */
 .pricing-section {
-	background-color: #f6f7f8;
+	background-color: #f7f8f9;
 }
 
 .pricing-section .wrap {
@@ -2934,6 +2938,144 @@ p.entry-meta {
 .faq p {
 	padding: 0 20px;
 	padding: 0 2rem;
+}
+
+/* ## General
+--------------------------------------------- */
+.edd_form legend {
+	padding: 0;
+	display: table;
+	font-weight: 700;
+}
+
+.edd_form fieldset {
+	border: 0;
+	padding: 1em 0;
+	margin: 0;
+	min-width: 0;
+}
+
+.edd_form body:not(:-moz-handler-blocked) fieldset {
+	display: table-cell;
+}
+
+/* ## Checkout
+--------------------------------------------- */
+.edd-checkout .custom-logo {
+	display: block;
+	width: 300px;
+	width: 30rem;
+	max-width: 90%;
+	margin: 0 auto 3em;
+}
+
+.edd-checkout .entry-title {
+	text-align: center;
+	opacity: 0;
+	position: absolute;
+}
+
+#edd_discount_code {
+	background-color: #f7f8f9;
+	border: 2px solid #eceff1;
+	padding: 1em;
+	margin-bottom: 2em;
+	font-size: smaller;
+}
+
+#edd_discount_code p {
+	margin-bottom: 0;
+}
+
+#edd_discount_code .edd-label {
+	opacity: 0;
+	position: absolute;
+}
+
+#edd_discount_code .edd-description {
+	margin-bottom: 1em;
+	display: inline-block;
+}
+
+#edd_discount_code .edd-discount-code-field-wrap {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.edd-payment-icons {
+	display: -ms-flexbox;
+	display: flex;
+	margin: 3em 1em -3em;
+}
+
+.edd-payment-icons img {
+	width: auto;
+	height: 30px;
+	height: 3rem;
+}
+
+#edd_payment_mode_select_wrap {
+	background-color: #f7f8f9;
+	border: 2px solid #eceff1;
+	padding: 4em 1em 1em;
+}
+
+#edd_payment_mode_select_wrap fieldset {
+	padding: 1em 0 0;
+}
+
+#edd_payment_mode_select_wrap label {
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#edd_payment_mode_select_wrap label:last-of-type {
+	margin-left: 2em;
+}
+
+#edd_payment_mode_select_wrap input {
+	margin: 0 10px 0 0;
+	margin: 0 1rem 0 0;
+}
+
+#edd_purchase_form_wrap fieldset p {
+	margin: 1em 0 0;
+}
+
+#edd_purchase_form_wrap fieldset label {
+	display: block;
+	font-size: smaller;
+	font-weight: 700;
+}
+
+#edd_purchase_form_wrap fieldset .edd-description {
+	font-size: 0.8em;
+	display: block;
+	margin: 0.5em 0;
+}
+
+#edd_purchase_form_wrap fieldset:first-of-type {
+	background-color: #f7f8f9;
+	border: 2px solid #eceff1;
+	padding: 1em;
+	margin-top: 2em;
+}
+
+#edd_purchase_form_wrap fieldset:last-of-type {
+	text-align: center;
+	font-size: x-large;
+	color: #263238;
+}
+
+#edd_purchase_form_wrap fieldset:last-of-type .button {
+	font-size: large;
+	margin: 1em auto 0;
 }
 
 /* # Print Styles
@@ -3277,6 +3419,13 @@ p.entry-meta {
 	}
 	.faq {
 		width: 48.71795%;
+	}
+	#edd_discount_code .edd-discount-code-field-wrap {
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+	}
+	#edd_discount_code .edd-input {
+		margin-right: 1em;
 	}
 }
 

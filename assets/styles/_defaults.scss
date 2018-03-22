@@ -148,8 +148,8 @@ select,
 textarea {
     background-color: $white;
     border: $site-border;
-    border-radius: 9rem;
-    padding: 0.5em 1.5em;
+    border-radius: $site-radius;
+    padding: 0.5em 1em;
     width: 100%;
     line-height: 2;
     &:focus {
@@ -303,9 +303,13 @@ tbody {
 td,
 th {
     text-align: left;
-    padding: 0.618em;
+    padding: 1em;
     border-top: $site-border;
     border-right: $site-border;
+}
+
+th {
+    background-color: $light;
 }
 
 

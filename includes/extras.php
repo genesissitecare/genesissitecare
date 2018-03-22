@@ -496,3 +496,17 @@ function gsc_edd_empty_cart_redirect() {
 	}
 
 }
+
+add_filter( 'edd_format_amount_decimals', 'gsc_edd_format_amount_decimals', 10, 2 );
+/**
+ * Remove decimal places from prices in Easy Digital Downloads
+ *
+ * @param  int $decimals
+ * @param  int $amount
+ * @return void
+ */
+function gsc_edd_format_amount_decimals( $decimals, $amount ) {
+	if( floor( $amount ) == $amount )
+		$decimals = 0;
+	return $decimals;
+}

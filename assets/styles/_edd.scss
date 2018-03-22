@@ -1,0 +1,129 @@
+/* ## General
+--------------------------------------------- */
+
+.edd_form {
+	legend {
+		padding: 0;
+		display: table;
+		font-weight: $bold;
+	}
+	fieldset {
+		border: 0;
+		padding: 1em 0;
+		margin: 0;
+		min-width: 0;
+	}
+	body:not(:-moz-handler-blocked) fieldset {
+		display: table-cell;
+	}
+}
+
+
+/* ## Checkout
+--------------------------------------------- */
+
+.edd-checkout {
+	.custom-logo {
+		display: block;
+		width: 30rem;
+		max-width: 90%;
+		margin: 0 auto 3em;
+	}
+	.entry-title {
+		text-align: center;
+		opacity: 0;
+		position: absolute;
+	}
+}
+
+#edd_discount_code {
+	background-color: $light;
+	border: $site-border;
+	padding: 1em;
+	margin-bottom: 2em;
+	font-size: smaller;
+	p {
+		margin-bottom: 0;
+	}
+	.edd-label {
+		opacity: 0;
+		position: absolute;
+	}
+	.edd-description {
+		margin-bottom: 1em;
+		display: inline-block;
+	}
+	.edd-discount-code-field-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		@include breakpoint(sm) {
+			flex-wrap: nowrap;
+		}
+	}
+	.edd-input {
+		@include breakpoint(sm) {
+			margin-right: 1em;
+		}
+	}
+}
+
+
+.edd-payment-icons {
+	display: flex;
+	margin: 3em 1em -3em;
+	img {
+		width: auto;
+		height: 3rem;
+	}
+}
+
+#edd_payment_mode_select_wrap {
+	background-color: $light;
+	border: $site-border;
+	padding: 4em 1em 1em;
+	fieldset {
+		padding: 1em 0 0;
+	}
+	label {
+		display: inline-flex;
+		align-items: center;
+		&:last-of-type {
+			margin-left: 2em;
+		}
+	}
+	input {
+		margin: 0 1rem 0 0;
+	}
+}
+
+#edd_purchase_form_wrap fieldset {
+	p {
+		margin: 1em 0 0;
+	}
+	label {
+		display: block;
+		font-size: smaller;
+		font-weight: $bold;
+	}
+	.edd-description {
+		font-size: 0.8em;
+		display: block;
+		margin: 0.5em 0;
+	}
+	&:first-of-type {
+		background-color: $light;
+		border: $site-border;
+		padding: 1em;
+		margin-top: 2em;
+	}
+	&:last-of-type {
+		text-align: center;
+		font-size: x-large;
+		color: $dark;
+		.button {
+			font-size: large;
+			margin: 1em auto 0;
+		}
+	}
+}
