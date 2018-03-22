@@ -36,6 +36,7 @@
 	 * Tooltips.
 	 */
 	$( '.tooltip-toggle' ).on( 'click', function() {
+		$( this ).toggleClass( 'clicked' );
 		$( this ).next( '.tooltip' ).fadeToggle();
 	});
 
@@ -47,6 +48,7 @@
 		if (!container.is(e.target) && container.has(e.target).length === 0) 
 		{
 			container.fadeOut();
+			$( '.tooltip-toggle' ).removeClass( 'clicked' );
 		}
 	});
 

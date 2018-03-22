@@ -108,10 +108,10 @@
     color: $white;
     text-align: center;
     @include breakpoint(md) {
-        padding: 17rem 0 6rem;
+        padding: 16rem 0 6rem;
     }
     @include breakpoint(lg) {
-        padding: 20rem 0 8rem;
+        padding: 18rem 0 8rem;
     }
     &:before {
         content: "";
@@ -121,7 +121,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba($accent, 1);
+        background-color: rgba($white, 1);
         z-index: 1;
     }
     .has-nav-secondary & {
@@ -139,7 +139,6 @@
     h1 {
         width: 100%;
         margin-bottom: 0;
-        color: $white;
     }
     p {
         width: 100%;
